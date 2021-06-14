@@ -1,6 +1,23 @@
 # java_spring_react
 Aplicación web con Java y React
 
+# Ejecución en desarrollo
+Para ejecutar en desarrollo ir a la carpeta frontend y ejecutar el comando 
+npm start
+
+Modificar el archivo index.js y colocar el local con 
+local: "http://localhost:8080/"
+
+Levantar el backend ejecutando desde el eclipse como una Spring Boot App
+
+# Generación del war
+En la carpeta war_prueba se encuentra el war generado por mi persona para las pruebas, a continuación se muestran los pasos para la compilación y scripts de base de datos.
+
+## 0. Compilación
+Para compilar se procede a realizar con maven un clean e install, la configuración de creación para producción
+
+mvn clean install
+
 ## 1. Ejecutar el war con el comando
 java -jar no_circula.war
 
