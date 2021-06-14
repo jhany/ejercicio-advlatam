@@ -1,7 +1,31 @@
 # java_spring_react
 Aplicación web con Java y React
 
-## Script para creación de tablas
+## 1. Ejecutar el war con el comando
+java -jar no_circula.war
+
+copiar la carpeta database en la misma ubicación del war, este contiene la base de datos de pruebas o sino se puede realizar una nueva base de datos con los pasos # 3
+
+## 2. Acceso web
+Una vez levantada la aplicación se puede acceder al sitio
+
+http://localhost:8080/
+
+y seleccionar del menú la opción insertar vehículo o consultar
+
+## 3. Acceso a base de datos interna
+http://localhost:8080/h2-ui
+
+Datos de conexión:
+
+Driver class: org.h2.Driver
+jdbc url: jdbc:h2:./database/testdb
+Username: sa
+Password: <dejar en blanco>
+
+Poblar la data con el siguiente script
+
+## 3.1. Script para creación de tablas
 create table tbl_vehiculo (
 id int not null primary key,
 placa varchar not null,
@@ -40,4 +64,4 @@ Insert into tbl_restriccion values (7,6,false,false,true,true,false,false,false)
 Insert into tbl_restriccion values (8,7,false,false,true,true,false,false,false);
 Insert into tbl_restriccion values (9,8,false,false,false,true,true,false,false);
 Insert into tbl_restriccion values (10,9,false,false,false,true,true,false,false);
-insert into tbl_restriccion (id,digito,
+
